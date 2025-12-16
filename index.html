@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Portfolio d'Imène – Univers Zelda</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="photo/Ahuri-Nes-Box-Zelda.32.png" type="image/jpeg" sizes="32x32">
+</head>
+<body>
+
+  <!-- Effet de particules lumineuses globales -->
+  <div class="fairy"></div>
+  <div class="fairy"></div>
+  <div class="fairy"></div>
+  <div class="fairy"></div>
+  <div class="fairy"></div>
+  <div class="fairy"></div>
+  <div class="fairy"></div>
+  <div class="fairy"></div>
+  <div class="fairy"></div>
+  <div class="fairy"></div>
+  <div class="fairy"></div>
+  <div class="fairy"></div>
+
+  <!-- HEADER / HERO -->
+  <header class="hero" id="accueil">
+    <nav class="nav">
+      <div class="logo">
+        <span class="logo-symbol">▲</span>
+        <span class="logo-text">Imène – MMI</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#projets">Quêtes</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-tagline">Hyrule du multimédia • Web • Design • Vidéo</p>
+        <h1>Imène, aventurière du <span>multimédia</span></h1>
+        <p class="hero-desc">
+          Étudiante en MMI, je mélange <strong>web</strong>, <strong>design</strong>, <strong>vidéo</strong> et un peu de <strong>code</strong> 
+          pour créer des projets immersifs, comme un voyage dans un jeu Zelda.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projets" class="btn btn-primary">Découvrir mes quêtes</a>
+          <a href="photo/Simple Professional CV Resume.pdf" class="btn btn-ghost" target="_blank" rel="noopener">Télécharger mon CV (PDF)</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number">+10</span>
+            <span class="stat-label">projets MMI</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">+5</span>
+            <span class="stat-label">projets perso</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">∞</span>
+            <span class="stat-label">idées en tête</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-orb">
+          <div class="hero-orb-inner">
+            <div class="hero-link-silhouette">
+              <!-- Tu peux mettre une image de toi ici en background CSS -->
+            </div>
+            <div class="triforce">
+              <span class="triangle t1"></span>
+              <span class="triangle t2"></span>
+              <span class="triangle t3"></span>
+            </div>
+          </div>
+        </div>
+        <p class="hero-note">
+          Portfolio inspiré de l’univers de Zelda   Animations, quêtes & coffres projets
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- SECTION PROJETS -->
+    <section id="projets" class="section section-projects">
+      <div class="section-header">
+        <h2>Mes quêtes principales</h2>
+        <p>Une sélection de projets MMI et personnels, comme des donjons à explorer.</p>
+      </div>
+
+      <!-- Filtres -->
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">Tous</button>
+        <button class="filter-btn" data-filter="mmi">MMI</button>
+        <button class="filter-btn" data-filter="web">Web / Dev</button>
+        <button class="filter-btn" data-filter="design">Design / Graphisme</button>
+        <button class="filter-btn" data-filter="video">Vidéo / Son</button>
+        <button class="filter-btn" data-filter="perso">Projets perso</button>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Exemple 1 : Les Cantines Vertes -->
+        <article class="project-card" data-category="mmi web video">
+          <div class="project-media">
+            <div class="project-slate">
+              <img 
+                id="cantines-main"
+                src="photo/Capture d’écran (426).png"
+                alt="Aperçu du webdoc Les Cantines Vertes"
+                class="project-main-image"
+              >
+            </div>
+
+            <!-- miniatures = PAS de lien, juste boutons -->
+            <div class="gallery-thumbs" data-target="cantines-main">
+              <button type="button" class="media-thumb">
+                <img src="photo/Capture d’écran (426).png" alt="Vue 1 Cantines">
+              </button>
+              <button type="button" class="media-thumb">
+                <img src="photo/Capture d’écran (427).png" alt="Vue 2 Cantines">
+              </button>
+              <button type="button" class="media-thumb">
+                <img src="photo/Capture d’écran (428).png" alt="Vue 3 Cantines">
+              </button>
+
+              <!-- La vidéo reste un lien (YouTube, etc.) -->
+              <a href="https://drive.google.com/file/d/13gbwPaBqSI7KTPlXLZjld3B4xa2le1G0/view?t=1" target="_blank" class="media-thumb media-video">
+                <span class="video-icon">▶</span>
+                <span class="video-label">Vidéo</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-head">
+            <span class="project-tag">Webdoc • MMI</span>
+            <span class="project-year">2025</span>
+          </div>
+          <h3>Les Cantines Vertes</h3>
+          <p class="project-desc">
+            Webdoc interactif sur une cantine bio : interview du chef, montage vidéo, 
+            production sonore immersive et intégration web (HTML/CSS/JS).
+          </p>
+          <ul class="project-badges">
+            <li>HTML/CSS</li>
+            <li>Vidéo</li>
+            <li>Son</li>
+          </ul>
+          <div class="project-actions">
+            <a href="https://lescantinesvertes.alwaysdata.net/index.html" class="btn btn-small" target="_blank">Voir le projet</a>
+            <button class="btn-link more-info" data-project="cantines">Voir les détails</button>
+          </div>
+        </article>
+
+        <!-- Exemple 2 : AeroFollow -->
+        <article class="project-card" data-category="mmi web design">
+          <div class="project-media">
+            <div class="project-slate">
+              <img 
+                id="aerofollow-main"
+                src="photo/Capture d’écran (429).png" 
+                alt="Aperçu du projet AeroFollow"
+                class="project-main-image"
+              >
+            </div>
+
+            <div class="gallery-thumbs" data-target="aerofollow-main">
+              <button type="button" class="media-thumb">
+                <img src="photo/Capture d’écran (429).png" alt="Vue 1 AeroFollow">
+              </button>
+              <button type="button" class="media-thumb">
+                <img src="photo/Capture d’écran (430).png" alt="Vue 2 AeroFollow">
+              </button>
+                <button type="button" class="media-thumb">
+                  <img src="photo/Capture d’écran (431).png" alt="Vue 3 AeroFollow">
+              </button>
+
+              <a href="https://www.canva.com/design/DAGna05FzG0/dX8aawDAfsHasDgEfWcN5g/view?utm_content=DAGna05FzG0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h14a85e6a4e" target="_blank" class="media-thumb media-video">
+                <span class="video-icon">▶</span>
+                <span class="video-label">Pitch</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-head">
+            <span class="project-tag">Projet marketing • MMI</span>
+            <span class="project-year">2025</span>
+          </div>
+          <h3>AeroFollow – Coque-drone</h3>
+          <p class="project-desc">
+            Concept de coque de téléphone qui se transforme en drone pour filmer en mains libres : 
+            identité visuelle, pitch, site vitrine et plan média.
+          </p>
+          <ul class="project-badges">
+            <li>Branding</li>
+            <li>Marketing</li>
+            <li>Maquettes</li>
+          </ul>
+          <div class="project-actions">
+            <a href="photo/imene_lachab_pub1.mp4" class="btn btn-small" target="_blank">Voir la vidéo</a>
+            <button class="btn-link more-info" data-project="aerofollow">Voir les détails</button>
+          </div>
+        </article>
+
+        <!-- Exemple 3 : Satiney -->
+        <article class="project-card" data-category="mmi design web">
+          <div class="project-media">
+            <div class="project-slate">
+              <img 
+                id="satiney-main"
+                src="photo/Capture d’écran (432).png"
+                alt="Aperçu du projet Satiney"
+                class="project-main-image"
+              >
+            </div>
+
+            <div class="gallery-thumbs" data-target="satiney-main">
+              <button type="button" class="media-thumb">
+                <img src="photo/Capture d’écran (432).png" alt="Vue 1 Satiney">
+              </button>
+              <button type="button" class="media-thumb">
+                <img src="photo/Capture d’écran (433).png" alt="Vue 2 Satiney">
+              </button>
+              <button type="button" class="media-thumb">
+                <img src="photo/Capture d’écran (434).png" alt="Vue 3 Satiney">
+              </button>
+
+              <a href="https://www.canva.com/design/DAGx2vBBH4Y/vHqJHHN-LTfPTX3AHHwsag/view?utm_content=DAGx2vBBH4Y&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h354310097d" target="_blank" class="media-thumb media-video">
+                <span class="video-icon">▶</span>
+                <span class="video-label">Présentation</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-head">
+            <span class="project-tag">Stage • E-commerce</span>
+            <span class="project-year">2025</span>
+          </div>
+          <h3>Satiney – Bonnets doublés satin</h3>
+          <p class="project-desc">
+            Travail sur les pages produits, la charte graphique et l’expérience utilisateur 
+            d’une boutique de bonnets doublés en satin.
+          </p>
+          <ul class="project-badges">
+            <li>UX/UI</li>
+            <li>E-commerce</li>
+            <li>Charte graphique</li>
+          </ul>
+          <div class="project-actions">
+            <a href="https://www.figma.com/design/5mwYRikiDVgsjelJwh0lc0/Site-Satiney?node-id=230-156&t=qwcP7oYCWaHLq43V-1" class="btn btn-small" target="_blank">Voir la maquette</a>
+            <button class="btn-link more-info" data-project="satiney">Voir les détails</button>
+          </div>
+        </article>
+
+        <!-- Exemple 4 : HAKU Streetwear -->
+        <article class="project-card" data-category="mmi design perso">
+          <div class="project-media">
+            <div class="project-slate">
+              <img 
+                id="haku-main"
+                src="photo/Capture d'écran 2025-12-16 221143.png" 
+                alt="Branding HAKU streetwear"
+                class="project-main-image"
+              >
+            </div>
+
+            <div class="gallery-thumbs" data-target="haku-main">
+              <button type="button" class="media-thumb">
+                <img src="photo/Capture d'écran 2025-12-16 221143.png" alt="Vue 1 HAKU">
+              </button>
+              <button type="button" class="media-thumb">
+                <img src="photo/Capture d'écran 2025-12-16 221126.png" alt="Vue 2 HAKU">
+              </button>
+              <button type="button" class="media-thumb">
+                <img src="photo/Group 108.png" alt="Vue 3 HAKU">
+              </button>
+
+              <a href="https://www.figma.com/design/am3Sfa6ghmx94XVntQaUES/Haku-Marketing?node-id=0-1&t=TxMpWlonM2Z82lBT-1" target="_blank" class="media-thumb media-video">
+                <span class="video-icon">▶</span>
+                <span class="video-label"><Main>Maquettes</Main></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="project-head">
+            <span class="project-tag">Wireframes mobiles</span>
+            <span class="project-year">2025</span>
+          </div>
+          <h3>HAKU – Marque streetwear</h3>
+          <p class="project-desc">
+            Marque inspirée de l’esthétique japonaise et du lapin sur la lune : logo, palette, 
+            visuels de vêtements et univers graphique complet.
+          </p>
+          <ul class="project-badges">
+            <li>Charte graphique</li>
+            <li>Wireframes</li>
+            <li>Moodboard</li>
+          </ul>
+          <div class="project-actions">
+            <button class="btn-link more-info" data-project="haku">Voir les détails</button>
+          </div>
+        </article>
+        </div> <!-- .projects-grid -->
+      </section> <!-- #projets -->
+
+      <!-- SECTION COMPÉTENCES -->
+    <section id="skills" class="section section-skills">
+      <div class="section-header">
+        <h2>Compétences du héros</h2>
+        <p>Comme un arbre de talents dans un RPG.</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skills-column">
+          <h3>Design & Graphisme</h3>
+          <div class="skill">
+            <span>Photoshop / Illustrator</span>
+            <div class="skill-bar"><span style="width: 85%;"></span></div>
+          </div>
+          <div class="skill">
+            <span>UI / Maquettes Figma</span>
+            <div class="skill-bar"><span style="width: 80%;"></span></div>
+          </div>
+          <div class="skill">
+            <span>Affiches, identités visuelles</span>
+            <div class="skill-bar"><span style="width: 90%;"></span></div>
+          </div>
+        </div>
+
+        <div class="skills-column">
+          <h3>Web & Développement</h3>
+          <div class="skill">
+            <span>HTML / CSS</span>
+            <div class="skill-bar"><span style="width: 80%;"></span></div>
+          </div>
+          <div class="skill">
+            <span>JavaScript</span>
+            <div class="skill-bar"><span style="width: 60%;"></span></div>
+          </div>
+          <div class="skill">
+            <span>Unity / C# (bases)</span>
+            <div class="skill-bar"><span style="width: 55%;"></span></div>
+          </div>
+        </div>
+
+        <div class="skills-column">
+          <h3>Vidéo & Projet</h3>
+          <div class="skill">
+            <span>Montage vidéo (Premiere Pro)</span>
+            <div class="skill-bar"><span style="width: 75%;"></span></div>
+          </div>
+          <div class="skill">
+            <span>Production sonore</span>
+            <div class="skill-bar"><span style="width: 65%;"></span></div>
+          </div>
+          <div class="skill">
+            <span>Gestion de projet (Trello, Git)</span>
+            <div class="skill-bar"><span style="width: 70%;"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION ABOUT -->
+    <section id="about" class="section section-about">
+      <div class="section-header">
+        <h2>Qui se cache derrière le héros ?</h2>
+        <p>Un peu de lore sur la joueuse.</p>
+      </div>
+
+      <div class="about-content">
+        <div class="about-avatar">
+          <div class="avatar-circle"></div>
+          <p class="avatar-caption">Imène, 19 ans, étudiante en MMI</p>
+        </div>
+
+        <div class="about-text">
+          <p>
+            Je suis une étudiante en <strong>BUT MMI</strong> (Métiers du Multimédia et de l’Internet),
+            passionnée par les univers narratifs et les jeux vidéo, en particulier <strong>Zelda</strong>.
+          </p>
+          <p>
+            J’aime créer des expériences où tout est pensé : l’ambiance, les couleurs, les transitions, 
+            la musique, le texte… Mon objectif est de mélanger <strong>design, web et vidéo</strong> pour raconter des histoires.
+          </p>
+          <p>
+            À travers mes projets, je développe autant mon côté 
+            <strong>créatif</strong> (affiches, logos, maquettes) que mon côté 
+            <strong>technique</strong> (intégration web, bases de développement, Unity).
+          </p>
+          <p>
+            Si tu recherches quelqu’un de <strong>motivée</strong>, <strong>rigoureuse</strong> et qui adore 
+            se donner à fond dans ses projets, on peut partir en quête ensemble.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION CONTACT -->
+    <section id="contact" class="section section-contact">
+      <div class="section-header">
+        <h2>Entrer dans le sanctuaire</h2>
+        <p>Une question, un stage, un projet ? Écris-moi.</p>
+      </div>
+
+      <div class="contact-wrapper">
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Nom / Prénom</label>
+            <input type="text" id="name" placeholder="Ton nom" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="ton.email@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Parle-moi de ta quête..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Envoyer le message</button>
+          <p class="contact-note">
+            
+          </p>
+        </form>
+
+        <div class="contact-info">
+          <h3>Autres moyens</h3>
+          <ul>
+            <li><strong>E-mail :</strong> imenelacha@gmail.com</li>
+            <li><strong>Ville :</strong> Aulnay-sous-bois 93600 / Région parisienne</li>
+            <li><strong>Disponible pour :</strong> Stage MMI, alternance, projets créatifs</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-triforce">
+      <span class="triangle t1"></span>
+      <span class="triangle t2"></span>
+      <span class="triangle t3"></span>
+    </div>
+    <p>© <span id="year"></span> Imène – Univers Zelda du multimédia.</p>
+  </footer>
+
+  <!-- LIGHTBOX (affichage des images en grand) -->
+  <div id="lightbox" class="lightbox">
+    <span class="lightbox-close">✕</span>
+    <img id="lightbox-img" src="" alt="Aperçu">
+  </div>
+
+  <!-- MODALE PROJETS -->
+  <div class="modal-overlay" id="project-modal">
+    <div class="modal">
+      <button class="modal-close" aria-label="Fermer">✕</button>
+      <h3 class="modal-title">Titre du projet</h3>
+      <p class="modal-content">
+        Contenu du projet...
+      </p>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="java/script.js"></script>
+</body>
+</html>
